@@ -24,6 +24,7 @@
         <java.version>1.8</java.version>
         <io.vavr.version>0.9.1</io.vavr.version>
         <spring-boot-actuator.version>1.5.6.RELEASE</spring-boot-actuator.version>
+        <commons-io.version>2.6</commons-io.version>
     </properties>
 
     <dependencies>
@@ -55,6 +56,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
             <version>${spring-boot-actuator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
         </dependency>
     </dependencies>
 
