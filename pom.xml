@@ -22,6 +22,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <io.vavr.version>0.9.1</io.vavr.version>
+        <spring-boot-actuator.version>1.5.6.RELEASE</spring-boot-actuator.version>
     </properties>
 
     <dependencies>
@@ -43,6 +45,16 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${io.vavr.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+            <version>${spring-boot-actuator.version}</version>
         </dependency>
     </dependencies>
 
