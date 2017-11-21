@@ -24,13 +24,10 @@ public class RequestBodyReaderAuthenticationFilter extends UsernamePasswordAuthe
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public RequestBodyReaderAuthenticationFilter() {
-        setUsernameParameter("login");
-        setPasswordParameter("password");
     }
 
     @Override
-    public Authentication attemptAuthentication(HttpServletRequest request,
-                                                HttpServletResponse response) throws AuthenticationException {
+    public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         String requestBody;
         try {
             requestBody = IOUtils.toString(request.getReader());
